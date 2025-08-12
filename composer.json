@@ -1,0 +1,42 @@
+{
+    "name": "raxos/datetime",
+    "description": "Datetime primitives and utilities for Raxos.",
+    "license": "mit",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "type": "library",
+    "authors": [
+        {
+            "name": "Bas Milius",
+            "email": "bas@mili.us"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Raxos\\DateTime\\": "src/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "8.4"
+        },
+        "allow-plugins": {
+            "php-http/discovery": false
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../*",
+            "symlink": true
+        }
+    ],
+    "require": {
+        "jetbrains/phpstorm-attributes": "^1.2",
+        "cakephp/chronos": "^3.2",
+        "raxos/foundation": "*"
+    },
+    "suggest": {
+        "raxos/database": "to use the built-in casters."
+    }
+}
