@@ -37,6 +37,7 @@
         "raxos/foundation": "*"
     },
     "suggest": {
-        "raxos/database": "to use the built-in casters."
+        "raxos/database": "to use the built-in casters.",
+        "raxos/http": "to use the built-in constraints."
     }
 }
