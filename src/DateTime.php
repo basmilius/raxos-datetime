@@ -5,7 +5,7 @@ namespace Raxos\DateTime;
 
 use Cake\Chronos\Chronos;
 use JsonSerializable;
-use Raxos\Router\Contract\InjectableInterface;
+use Raxos\Foundation\Contract\StringParsableInterface;
 use Stringable;
 
 /**
@@ -15,7 +15,7 @@ use Stringable;
  * @package Raxos\DateTime
  * @since 2.0.0
  */
-class DateTime extends Chronos implements InjectableInterface, JsonSerializable, Stringable
+class DateTime extends Chronos implements JsonSerializable, Stringable, StringParsableInterface
 {
 
     /**
@@ -43,9 +43,9 @@ class DateTime extends Chronos implements InjectableInterface, JsonSerializable,
      * @author Bas Milius <bas@mili.us>
      * @since 2.0.0
      */
-    public static function getRouterRegex(): string
+    public static function fromString(string $input): self
     {
-        return '\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}';
+        return static::parse($input);
     }
 
     /**
@@ -53,9 +53,9 @@ class DateTime extends Chronos implements InjectableInterface, JsonSerializable,
      * @author Bas Milius <bas@mili.us>
      * @since 2.0.0
      */
-    public static function getRouterValue(string $value): self
+    public static function pattern(): string
     {
-        return static::parse($value);
+        return '\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}';
     }
 
 }
