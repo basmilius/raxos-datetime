@@ -768,13 +768,14 @@
             "dist": {
                 "type": "path",
                 "url": "../http",
-                "reference": "1f93168bf7062aaec5a331700b38157e7f97ec57"
+                "reference": "d811c7daec2fa9ff43d78f6a7ab5d02e3f9f07e8"
             },
             "require": {
                 "ext-ctype": "*",
                 "ext-mbstring": "*",
                 "guzzlehttp/guzzle": "^7",
                 "jetbrains/phpstorm-attributes": "^1.2",
+                "raxos/datetime": "*",
                 "raxos/foundation": "*"
             },
             "require-dev": {
