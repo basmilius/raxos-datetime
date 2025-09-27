@@ -4,9 +4,9 @@ declare(strict_types=1);
 namespace Raxos\DateTime\Constraint;
 
 use Attribute;
+use Raxos\Contract\Http\Validate\ConstraintAttributeInterface;
 use Raxos\DateTime\Time;
-use Raxos\Http\Validate\Contract\ConstraintAttributeInterface;
-use Raxos\Http\Validate\Error\HttpConstraintException;
+use Raxos\Http\Validate\Error\ConstraintErrorException;
 use ReflectionProperty;
 use function is_string;
 use function preg_match;
@@ -33,7 +33,7 @@ final readonly class IsTime implements ConstraintAttributeInterface
     public function check(ReflectionProperty $property, mixed $value): Time
     {
         if (!is_string($value) || !preg_match(self::REGEXP, $value)) {
-            throw HttpConstraintException::of(
+            throw new ConstraintErrorException(
                 'is_time',
                 'Invalid time.'
             );

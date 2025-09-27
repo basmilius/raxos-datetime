@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Raxos\DateTime\Caster;
 
-use Raxos\Database\Orm\Contract\CasterInterface;
+use Raxos\Contract\Database\Orm\CasterInterface;
 use Raxos\Database\Orm\Model;
 use Raxos\DateTime\Time;
 
