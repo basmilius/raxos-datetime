@@ -34,7 +34,7 @@ final readonly class DateTimeCaster implements CasterInterface
      */
     public function encode(mixed $value, Model $instance): string|float|int|null
     {
-        return $value instanceof DateTime ? $value->toDateTimeString() : null;
+        return $value instanceof DateTime ? $value->setTimezone('UTC')->toDateTimeString() : null;
     }
 
 }
