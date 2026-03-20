@@ -26,14 +26,11 @@ final class DateTimeUtil
      */
     public static function timeToSeconds(string $time): int
     {
-        $seconds = 0;
-        $time = array_map('intval', explode(':', $time));
+        $parts = explode(':', $time)
+                |> (fn($x) => array_map('intval', $x))
+                |> (fn($x) => array_pad($x, 3, 0));
 
-        $seconds += $time[0] * 3600;
-        $seconds += $time[1] * 60;
-        $seconds += $time[2] ?? 0;
-
-        return $seconds;
+        return $parts[0] * 3600 + $parts[1] * 60 + $parts[2];
     }
 
     /**

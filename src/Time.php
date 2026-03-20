@@ -33,9 +33,9 @@ class Time extends ChronosTime implements JsonSerializable, Stringable, StringPa
      * @author Bas Milius <bas@mili.us>
      * @since 2.0.0
      */
-    public static function fromString(string $input): self
+    public static function fromString(string $input): static
     {
-        return self::parse($input);
+        return static::parse($input);
     }
 
     /**
