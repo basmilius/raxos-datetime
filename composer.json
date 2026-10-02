@@ -1,7 +1,7 @@
 {
     "name": "raxos/datetime",
     "description": "Datetime primitives and utilities for Raxos.",
-    "license": "mit",
+    "license": "MIT",
     "minimum-stability": "dev",
     "prefer-stable": true,
     "type": "library",
@@ -19,6 +19,9 @@
     "config": {
         "platform": {
             "php": "8.5"
+        },
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
         }
     },
     "repositories": [
@@ -29,16 +32,26 @@
         }
     ],
     "require": {
-        "jetbrains/phpstorm-attributes": "^1.2",
         "cakephp/chronos": "^3.3",
+        "jetbrains/phpstorm-attributes": "^1.2",
+        "php": ">=8.5",
         "raxos/foundation": "*"
     },
     "require-dev": {
         "raxos/database": "*",
-        "raxos/http": "*"
+        "raxos/http": "*",
+        "pestphp/pest": "^5.0"
     },
     "suggest": {
         "raxos/database": "to use the built-in casters.",
         "raxos/http": "to use the built-in constraints."
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/Fixtures/"
+        ]
+    },
+    "scripts": {
+        "test": "pest --compact"
     }
 }
