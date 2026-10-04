@@ -18,6 +18,8 @@ jobs:
           --health-timeout 3s
           --health-retries 10
     env:
+      # The HTTP test dependency requires datetime; detached checkouts need the branch alias.
+      COMPOSER_ROOT_VERSION: dev-main
       RAXOS_REDIS_HOST: 127.0.0.1
       RAXOS_REDIS_PORT: 6379
     steps:
