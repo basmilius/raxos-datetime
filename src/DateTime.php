@@ -21,8 +21,10 @@ use function preg_match;
  */
 class DateTime extends Chronos implements JsonSerializable, Stringable, StringParsableInterface
 {
+
     /**
      * {@inheritdoc}
+     *
      * @author Bas Milius <bas@mili.us>
      * @since 2.0.0
      */
@@ -33,6 +35,7 @@ class DateTime extends Chronos implements JsonSerializable, Stringable, StringPa
 
     /**
      * {@inheritdoc}
+     *
      * @author Bas Milius <bas@mili.us>
      * @since 2.0.0
      */
@@ -43,6 +46,7 @@ class DateTime extends Chronos implements JsonSerializable, Stringable, StringPa
 
     /**
      * {@inheritdoc}
+     *
      * @throws InvalidArgumentException
      * @author Bas Milius <bas@mili.us>
      * @since 2.0.0
@@ -60,6 +64,7 @@ class DateTime extends Chronos implements JsonSerializable, Stringable, StringPa
 
     /**
      * {@inheritdoc}
+     *
      * @author Bas Milius <bas@mili.us>
      * @since 2.0.0
      */
@@ -67,4 +72,5 @@ class DateTime extends Chronos implements JsonSerializable, Stringable, StringPa
     {
         return '\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{1,6})?(?:Z|[+-]\d{2}:\d{2})?';
     }
+
 }

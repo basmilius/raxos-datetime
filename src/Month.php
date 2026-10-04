@@ -12,6 +12,7 @@ namespace Raxos\DateTime;
  */
 enum Month: int
 {
+
     case JANUARY = 1;
     case FEBRUARY = 2;
     case MARCH = 3;
@@ -51,4 +52,5 @@ enum Month: int
             12 => self::DECEMBER
         };
     }
+
 }

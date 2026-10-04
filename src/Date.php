@@ -20,6 +20,7 @@ class Date extends ChronosDate implements JsonSerializable, Stringable, StringPa
 
     /**
      * {@inheritdoc}
+     *
      * @author Bas Milius <bas@mili.us>
      * @since 2.0.0
      */
@@ -30,6 +31,7 @@ class Date extends ChronosDate implements JsonSerializable, Stringable, StringPa
 
     /**
      * {@inheritdoc}
+     *
      * @author Bas Milius <bas@mili.us>
      * @since 2.0.0
      */
@@ -40,6 +42,7 @@ class Date extends ChronosDate implements JsonSerializable, Stringable, StringPa
 
     /**
      * {@inheritdoc}
+     *
      * @author Bas Milius <bas@mili.us>
      * @since 2.0.0
      */
@@ -50,6 +53,7 @@ class Date extends ChronosDate implements JsonSerializable, Stringable, StringPa
 
     /**
      * {@inheritdoc}
+     *
      * @author Bas Milius <bas@mili.us>
      * @since 2.0.0
      */

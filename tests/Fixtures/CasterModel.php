@@ -7,5 +7,7 @@ use Raxos\Database\Orm\Model;
 
 final class CasterModel extends Model
 {
+
     public function __construct() {}
+
 }

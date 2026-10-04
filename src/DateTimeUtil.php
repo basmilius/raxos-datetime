@@ -27,8 +27,8 @@ final class DateTimeUtil
     public static function timeToSeconds(string $time): int
     {
         $parts = explode(':', $time)
-                |> (fn($x) => array_map('intval', $x))
-                |> (fn($x) => array_pad($x, 3, 0));
+                |> (static fn($x) => array_map('intval', $x))
+                |> (static fn($x) => array_pad($x, 3, 0));
 
         return $parts[0] * 3600 + $parts[1] * 60 + $parts[2];
     }

@@ -12,6 +12,7 @@ namespace Raxos\DateTime;
  */
 enum Weekday: int
 {
+
     case SUNDAY = 0;
     case MONDAY = 1;
     case TUESDAY = 2;
@@ -41,4 +42,5 @@ enum Weekday: int
             7 => self::SUNDAY
         };
     }
+
 }

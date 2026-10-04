@@ -19,6 +19,7 @@ final readonly class TimeCaster implements CasterInterface
 
     /**
      * {@inheritdoc}
+     *
      * @author Bas Milius <bas@mili.us>
      * @since 2.0.0
      */
@@ -29,6 +30,7 @@ final readonly class TimeCaster implements CasterInterface
 
     /**
      * {@inheritdoc}
+     *
      * @author Bas Milius <bas@mili.us>
      * @since 2.0.0
      */
