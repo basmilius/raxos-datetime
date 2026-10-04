@@ -43,8 +43,8 @@ class DateTime extends Chronos implements JsonSerializable, Stringable, StringPa
 
     /**
      * {@inheritdoc}
-     * @author Bas Milius <bas@mili.us>
      * @throws InvalidArgumentException
+     * @author Bas Milius <bas@mili.us>
      * @since 2.0.0
      */
     public static function fromString(string $input): static
