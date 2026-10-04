@@ -35,11 +35,11 @@
         "cakephp/chronos": "^3.3",
         "jetbrains/phpstorm-attributes": "^1.2",
         "php": ">=8.5",
-        "raxos/foundation": "*"
+        "raxos/foundation": "^3.2"
     },
     "require-dev": {
-        "raxos/database": "*",
-        "raxos/http": "*",
+        "raxos/database": "^3.2",
+        "raxos/http": "^3.2",
         "pestphp/pest": "^5.0"
     },
     "suggest": {
@@ -53,5 +53,10 @@
     },
     "scripts": {
         "test": "pest --compact"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "3.3.x-dev"
+        }
     }
 }
